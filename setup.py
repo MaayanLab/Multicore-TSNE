@@ -79,10 +79,7 @@ if __name__ == '__main__':
         author="Dmitry Ulyanov (based on L. Van der Maaten's code)",
         author_email='dmitry.ulyanov.msu@gmail.com',
         url='https://github.com/DmitryUlyanov/Multicore-TSNE',
-        install_requires=[
-            'numpy',
-            'cffi'
-        ],
+        install_requires=open('requirements.txt', 'r').readlines(),
         packages=find_packages(),
         include_package_data=True,
 
